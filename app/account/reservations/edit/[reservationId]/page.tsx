@@ -20,7 +20,7 @@ export default async function Page({ params }: PageProps): Promise<JSX.Element> 
     return (
         <div className="flex flex-col gap-6 p-2">
             <div className="flex justify-between items-center">
-                <h2 className="text-2xl text-accent-400 font-semibold">Edit reservation #{reservation.id}</h2>
+                <h2 className="text-base text-accent-400 font-semibold sm:text-2xl">Edit reservation #{reservation.id}</h2>
                 <BackButton />
             </div>
             <UpdateReservationForm key={reservationId} reservation={reservation} maxCapacity={cabin?.maxCapacity} />

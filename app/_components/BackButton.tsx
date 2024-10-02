@@ -14,7 +14,7 @@ export default function BackButton(): JSX.Element {
     return (
         <button onClick={() => router.back()} className="flex items-center gap-1 text-primary-200">
             <IoIosArrowRoundBack className="text-xl" />
-            <span>Go back</span>
+            <span className="text-sm sm:text-base">Go back</span>
         </button>
     )
 }
